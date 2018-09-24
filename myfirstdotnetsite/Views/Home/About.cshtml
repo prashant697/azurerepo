@@ -1,0 +1,11 @@
+﻿@model WebApplication1.Models.VehicleSelectionViewModel
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    @Html.LabelFor(m => m.MakeId)
+    @Html.DropDownListFor(m => m.Make,Model.Make)
+</div>
